@@ -1,10 +1,10 @@
 import { EventExplorerView } from "@/components/ingest/EventExplorerView";
 
 export default function ContractExplorerPage({
-  params,
+    params,
 }: {
-  params: { contractId: string };
+    params: { contractId: string };
 }) {
-  const { contractId } = params;
-  return <EventExplorerView contractId={contractId} />;
+    const { contractId } = params;
+    return <EventExplorerView contractId={contractId} />;
 }

@@ -128,14 +128,14 @@ export default function ContractDetailPage({ params }: { params: { contractId: s
                   <div className="text-xs text-terminal-cyan uppercase mb-1">Status</div>
                   <span
                     className={`inline-flex items-center gap-2 px-2 py-1 text-xs font-mono ${contract.status === "active"
-                        ? "text-terminal-green border border-terminal-green/30 bg-terminal-green/10"
-                        : "text-terminal-gray border border-terminal-gray/30 bg-terminal-gray/10"
+                      ? "text-terminal-green border border-terminal-green/30 bg-terminal-green/10"
+                      : "text-terminal-gray border border-terminal-gray/30 bg-terminal-gray/10"
                       }`}
                   >
                     <span
                       className={`w-2 h-2 rounded-full ${contract.status === "active"
-                          ? "bg-terminal-green animate-pulse"
-                          : "bg-terminal-gray"
+                        ? "bg-terminal-green animate-pulse"
+                        : "bg-terminal-gray"
                         }`}
                     />
                     {contract.status.toUpperCase()}
